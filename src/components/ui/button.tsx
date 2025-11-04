@@ -15,6 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        warm: "bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 shadow-[var(--shadow-soft)]",
+        soft: "bg-card text-card-foreground border-2 border-primary/20 hover:border-primary/40 hover:shadow-[var(--shadow-card)]",
       },
       size: {
         default: "h-10 px-4 py-2",
