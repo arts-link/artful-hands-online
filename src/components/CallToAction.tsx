@@ -3,7 +3,7 @@ import { Mail, ArrowRight } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-primary/5">
+    <section id="contact" className="py-24 bg-gradient-to-b from-background to-primary/5">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">

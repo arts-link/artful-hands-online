@@ -31,7 +31,9 @@ const Navigation = () => {
             >
               About
             </a>
-            <Button variant="warm">Get Started</Button>
+            <Button variant="warm" asChild>
+              <a href="#contact">Get Started</a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
