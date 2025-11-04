@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 const Navigation = () => {
   return (
@@ -36,10 +44,57 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors">
-            <Menu className="w-6 h-6 text-foreground" />
-          </button>
+          {/* Mobile Menu */}
+          <Drawer direction="right">
+            <DrawerTrigger asChild>
+              <button className="md:hidden p-2 hover:bg-muted rounded-lg transition-colors">
+                <Menu className="w-6 h-6 text-foreground" />
+              </button>
+            </DrawerTrigger>
+            <DrawerContent className="h-full w-[80vw] max-w-sm ml-auto rounded-l-2xl">
+              <DrawerHeader className="text-left border-b border-border">
+                <div className="flex items-center justify-between">
+                  <DrawerTitle className="font-display text-2xl">Menu</DrawerTitle>
+                  <DrawerClose asChild>
+                    <button className="p-2 hover:bg-muted rounded-lg transition-colors">
+                      <X className="w-5 h-5" />
+                    </button>
+                  </DrawerClose>
+                </div>
+              </DrawerHeader>
+              <div className="flex flex-col gap-2 p-6">
+                <DrawerClose asChild>
+                  <a
+                    href="#services"
+                    className="text-foreground hover:text-primary hover:bg-muted/50 transition-colors font-body text-lg py-3 px-4 rounded-lg"
+                  >
+                    Services
+                  </a>
+                </DrawerClose>
+                <DrawerClose asChild>
+                  <a
+                    href="#artists"
+                    className="text-foreground hover:text-primary hover:bg-muted/50 transition-colors font-body text-lg py-3 px-4 rounded-lg"
+                  >
+                    Artists
+                  </a>
+                </DrawerClose>
+                <DrawerClose asChild>
+                  <a
+                    href="#about"
+                    className="text-foreground hover:text-primary hover:bg-muted/50 transition-colors font-body text-lg py-3 px-4 rounded-lg"
+                  >
+                    About
+                  </a>
+                </DrawerClose>
+                <DrawerClose asChild>
+                  <Button variant="warm" className="mt-4 w-full" asChild>
+                    <a href="#contact">Get Started</a>
+                  </Button>
+                </DrawerClose>
+              </div>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
     </nav>
