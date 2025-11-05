@@ -29,7 +29,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://domains.arts-link.com/" className="text-muted-foreground hover:text-primary transition-colors">
                   Custom Domains
                 </a>
               </li>
