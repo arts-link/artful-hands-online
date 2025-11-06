@@ -17,28 +17,6 @@ const services = [
     ],
   },
   {
-    icon: Globe,
-    title: "Easy Content Management",
-    description: "Update your portfolio anytime without technical knowledge. Our intuitive interface makes it simple to add new work, update descriptions, and manage your online presence.",
-    features: [
-      "Simple drag-and-drop interface",
-      "Bulk image uploads",
-      "Text editor with formatting",
-      "Preview before publishing",
-    ],
-  },
-  {
-    icon: Users,
-    title: "Artist Community Features",
-    description: "Connect with collectors, galleries, and fellow artists. Build your network and grow your audience with integrated social features and professional presentation tools.",
-    features: [
-      "Visitor contact forms",
-      "Social media integration",
-      "Email newsletter setup",
-      "Collector inquiry management",
-    ],
-  },
-  {
     icon: Settings,
     title: "Technical Excellence",
     description: "We handle all the technical details so you can focus on your art. From hosting to security to performance optimization, everything is taken care of.",
