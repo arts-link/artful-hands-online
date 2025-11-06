@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground/5 border-t border-border py-12">
@@ -19,14 +21,14 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 font-body">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Artist Portfolios
-                </a>
+                <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                  Our Services
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Gallery Websites
-                </a>
+                <Link to="/artists" className="text-muted-foreground hover:text-primary transition-colors">
+                  Featured Artists
+                </Link>
               </li>
               <li>
                 <a href="https://domains.arts-link.com/" className="text-muted-foreground hover:text-primary transition-colors">
@@ -41,19 +43,19 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
             <ul className="space-y-2 font-body">
               <li>
-                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
