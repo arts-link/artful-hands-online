@@ -41,17 +41,17 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
             <ul className="space-y-2 font-body">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </a>
               </li>

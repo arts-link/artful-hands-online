@@ -22,10 +22,10 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#services"
+              href="#about"
               className="text-foreground hover:text-primary transition-colors font-body"
             >
-              Services
+              About
             </a>
             <a
               href="#artists"
@@ -34,10 +34,10 @@ const Navigation = () => {
               Artists
             </a>
             <a
-              href="#about"
+              href="#services"
               className="text-foreground hover:text-primary transition-colors font-body"
             >
-              About
+              Services
             </a>
             <Button variant="warm" asChild>
               <a href="#contact">Get Started</a>
