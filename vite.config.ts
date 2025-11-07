@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Set base path for GitHub Pages deployment only
+  base: process.env.GITHUB_ACTIONS ? "/artful-hands-online/" : "/",
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
