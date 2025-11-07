@@ -131,47 +131,98 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Pricing Teaser */}
+        {/* Pricing Section */}
         <section className="py-16 bg-gradient-to-b from-background to-primary/5">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Simple, Transparent Pricing
+                  Honest, Upfront Pricing
                 </h2>
-                <p className="text-lg text-muted-foreground font-body">
-                  One affordable price includes everything you need. No hidden fees or surprise charges.
+                <p className="text-lg text-muted-foreground font-body max-w-2xl mx-auto">
+                  Pay once for your website. No subscriptions, no surprise fees. 
+                  You own your code and can host it anywhere.
                 </p>
               </div>
-              <Card className="max-w-md mx-auto text-center p-8">
-                <CardContent className="space-y-6">
-                  <div>
-                    <div className="text-5xl font-bold text-foreground mb-2">$29</div>
-                    <div className="text-muted-foreground font-body">per month</div>
+              
+              <Card className="max-w-2xl mx-auto p-8">
+                <CardContent className="space-y-8">
+                  <div className="text-center pb-6 border-b border-border">
+                    <div className="text-muted-foreground font-body text-sm uppercase tracking-wide mb-2">
+                      Starting at
+                    </div>
+                    <div className="text-5xl font-bold text-foreground mb-2">$500</div>
+                    <div className="text-lg text-muted-foreground font-body">
+                      One-time payment • No ongoing fees
+                    </div>
                   </div>
-                  <ul className="space-y-3 text-left">
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
-                      <span className="text-muted-foreground font-body">Custom portfolio design</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
-                      <span className="text-muted-foreground font-body">Unlimited image uploads</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
-                      <span className="text-muted-foreground font-body">All premium features included</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-primary mt-1">✓</span>
-                      <span className="text-muted-foreground font-body">Priority support</span>
-                    </li>
-                  </ul>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="font-display text-xl font-semibold text-foreground mb-4">
+                        What's Included
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">Custom portfolio design</strong> tailored to your artistic style
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">Built with open source tools</strong> - no vendor lock-in
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">You own all the code</strong> - transfer it anywhere, anytime
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">Free hosting included</strong> for most sites - no recurring costs
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">Fast, optimized, accessible</strong> - built right from the start
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary mt-1">✓</span>
+                          <span className="text-muted-foreground font-body">
+                            <strong className="text-foreground">Privacy-focused</strong> - no tracking, no data selling
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="pt-6 border-t border-border">
+                      <h3 className="font-display text-lg font-semibold text-foreground mb-3">
+                        Ongoing Support (Optional)
+                      </h3>
+                      <p className="text-muted-foreground font-body text-sm">
+                        Update your site yourself using our tutorials, or let us handle changes for a reasonable per-update fee. 
+                        You choose what works best for you.
+                      </p>
+                    </div>
+                  </div>
+
                   <Button variant="warm" size="lg" className="w-full" asChild>
-                    <a href="/#contact">Get Started Today</a>
+                    <a href="/#contact">Get Your Free Quote</a>
                   </Button>
                 </CardContent>
               </Card>
+
+              <p className="text-center text-sm text-muted-foreground font-body mt-6 max-w-2xl mx-auto">
+                * Very large or high-traffic sites may have additional considerations, 
+                but we guarantee transparent pricing that's lower than you'd expect.
+              </p>
             </div>
           </div>
         </section>
