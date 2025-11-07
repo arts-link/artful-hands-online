@@ -131,6 +131,132 @@ const Services = () => {
           </div>
         </section>
 
+        {/* How It Works */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  How It Works
+                </h2>
+                <p className="text-lg text-muted-foreground font-body">
+                  From first conversation to launch, we make the process simple and collaborative.
+                </p>
+              </div>
+
+              <div className="space-y-8">
+                {/* Step 1 */}
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-lg">
+                      1
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      Initial Consultation
+                    </h3>
+                    <p className="text-muted-foreground font-body">
+                      We start with a conversation about your vision, your work, and what you want to achieve with your online presence. 
+                      This is where we learn about your style and needs.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-lg">
+                      2
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      Choose Your Path
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="pl-4 border-l-2 border-primary/30">
+                        <h4 className="font-semibold text-foreground mb-1">Template Option</h4>
+                        <p className="text-muted-foreground font-body text-sm">
+                          Start with our professionally designed templates optimized for SEO, accessibility, and performance. 
+                          We'll customize it with your images, content, and brand colors.
+                        </p>
+                      </div>
+                      <div className="pl-4 border-l-2 border-primary/30">
+                        <h4 className="font-semibold text-foreground mb-1">Custom Design Option</h4>
+                        <p className="text-muted-foreground font-body text-sm">
+                          Bring your existing design, work with us to create something unique, or we can connect you with 
+                          one of our partner designers for a fully customized creation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-lg">
+                      3
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      Content & Assets
+                    </h3>
+                    <p className="text-muted-foreground font-body">
+                      Share your artwork images, artist statement, bio, and any other content you'd like included. 
+                      We'll guide you on what we need and help with content strategy if needed.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-lg">
+                      4
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      Development & Review
+                    </h3>
+                    <p className="text-muted-foreground font-body">
+                      We build your site using modern, open-source tools and set it up on our platform. 
+                      You'll get a preview link to review everything before launch, and we'll make any adjustments you need.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 5 */}
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-lg">
+                      5
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                      Launch & Beyond
+                    </h3>
+                    <p className="text-muted-foreground font-body">
+                      Once you're happy with everything, we'll launch your site and connect your custom domain if you have one. 
+                      You'll receive tutorials for updating your site yourself, or you can rely on us for ongoing updates—your choice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 text-center">
+                <Button variant="warm" size="lg" asChild>
+                  <a href="/#contact">Start Your Project</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Pricing Section */}
         <section className="py-16 bg-gradient-to-b from-background to-primary/5">
           <div className="container mx-auto px-4">
