@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Jill Bonovitz",
+    "specialty": "Sculpture & Installation",
+    "description": "In wire I am creating the edges of what is not there; in clay, I am creating the essence of what is.",
+    "image": "https://www.arts-link.com/artists/jill-bonovitz/jill-bonovitz-feature_hu_14c1f0a945df8df6.jpg",
+    "url": "https://jillbonovitz.com/",
+    "launchedDate": "2024-03-15",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Lucinda Kindred",
+    "specialty": "Textile Art",
+    "description": "Textile artist inspired by Aboriginal patterns, weaving cultural stories into contemporary art.",
+    "image": "https://www.arts-link.com/artists/cindy-kindred/cindy-kindred-feature_hu_67578ad8337828cd.jpg",
+    "url": "https://www.lucindakindredart.com/",
+    "launchedDate": "2024-02-20",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Louise Strawbridge",
+    "specialty": "Mixed Media",
+    "description": "Exploring the possibilities of disturbing qualities in the commonplace through varied materials and textures.",
+    "image": "https://www.arts-link.com/artists/louise-strawbridge/featured_louisestrawbridge-hp_hu_138937a253bb4e1f.jpg",
+    "url": "https://www.louisestrawbridge.com/",
+    "launchedDate": "2023-12-10",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Writing Sos",
+    "specialty": "Writing Tutoring",
+    "description": "Professional writing tutoring services helping writers develop their craft.",
+    "image": "https://www.arts-link.com/artists/writing-sos/writing-sos-feature.jpg",
+    "url": "https://writingsos.com/",
+    "launchedDate": "2024-01-05",
+    "featured": true
+  }
+]

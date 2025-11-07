@@ -1,27 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import artistsData from "@/data/artists.json";
+import { Artist } from "@/types/artist";
 
-const artists = [
-  {
-    name: "Jill Bonovitz",
-    image: "https://www.arts-link.com/artists/jill-bonovitz/jill-bonovitz-feature_hu_14c1f0a945df8df6.jpg",
-    url: "https://jillbonovitz.com/",
-    description: "Contemporary sculpture and installation art",
-  },
-  {
-    name: "Lucinda Kindred",
-    image: "https://www.arts-link.com/artists/cindy-kindred/cindy-kindred-feature_hu_67578ad8337828cd.jpg",
-    url: "https://www.lucindakindredart.com/",
-    description: "Textile art inspired by Aboriginal patterns",
-  },
-  {
-    name: "Louise Strawbridge",
-    image: "https://www.arts-link.com/artists/louise-strawbridge/featured_louisestrawbridge-hp_hu_138937a253bb4e1f.jpg",
-    url: "https://www.louisestrawbridge.com/",
-    description: "Mixed media and abstract expressionism",
-  },
-];
+const allArtists: Artist[] = artistsData;
+
+// Get the 2 most recent artists
+const artists = allArtists
+  .sort((a, b) => new Date(b.launchedDate).getTime() - new Date(a.launchedDate).getTime())
+  .slice(0, 2);
 
 const FeaturedArtists = () => {
   return (
@@ -71,8 +60,8 @@ const FeaturedArtists = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            View All Artist Portfolios
+          <Button variant="outline" size="lg" asChild>
+            <Link to="/artists">View All Artist Portfolios</Link>
           </Button>
         </div>
       </div>
