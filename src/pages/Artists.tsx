@@ -15,7 +15,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
-const ITEMS_PER_PAGE = 2;
+const ITEMS_PER_PAGE = 8;
 
 const Artists = () => {
   const [currentPage, setCurrentPage] = useState(1);
