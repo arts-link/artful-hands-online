@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Palette } from "lucide-react";
+import { ArrowRight, Link, Palette } from "lucide-react";
 import heroImage from "@/assets/hero-artistic.jpg";
 
 const Hero = () => {
@@ -37,11 +37,15 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" variant="warm" className="text-base group">
-              Get Your Website Started
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Link to="/#contact">
+                Get Your Website Started
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
             <Button size="lg" variant="soft" className="text-base">
-              View Artist Portfolios
+              <Link to="/artists">
+                View Artist Portfolios
+              </Link>
             </Button>
           </div>
 
