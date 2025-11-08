@@ -19,19 +19,26 @@ const ScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // If there's a hash, scroll to that element
+    // If there's a hash, scroll to that element with offset for fixed nav
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
         setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 0);
+          const navOffset = 80; // Account for fixed navigation height
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - navOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 100);
       }
     } else {
       // Otherwise scroll to top
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
-  }, [location]);
+  }, [location.pathname, location.hash, location.key]);
 
   return null;
 };
