@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe, Palette, Users, Settings, Zap, Shield, Headphones, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -250,7 +251,7 @@ const Services = () => {
 
               <div className="mt-12 text-center">
                 <Button variant="warm" size="lg" asChild>
-                  <a href="/#contact">Start Your Project</a>
+                  <Link to="/#contact">Start Your Project</Link>
                 </Button>
               </div>
             </div>
