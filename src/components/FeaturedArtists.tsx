@@ -10,7 +10,7 @@ const allArtists: Artist[] = artistsData;
 // Get the 2 most recent artists
 const artists = allArtists
   .sort((a, b) => new Date(b.launchedDate).getTime() - new Date(a.launchedDate).getTime())
-  .slice(0, 2);
+  .slice(0, 4);
 
 const FeaturedArtists = () => {
   return (
