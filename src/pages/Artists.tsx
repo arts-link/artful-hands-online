@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 import artistsData from "@/data/artists.json";
 import { Artist } from "@/types/artist";
+import { Link } from "react-router-dom";
 import {
   Pagination,
   PaginationContent,
@@ -140,7 +141,7 @@ const Artists = () => {
                 Let's create a stunning online presence for your artwork.
               </p>
               <Button variant="warm" size="lg" asChild>
-                <a href="/#contact">Start Your Portfolio</a>
+                <Link to="/#contact">Start Your Portfolio</Link>
               </Button>
             </div>
           </div>
