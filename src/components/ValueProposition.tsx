@@ -3,7 +3,7 @@ import { Sparkles, Shield, Heart, Zap } from "lucide-react";
 const values = [
   {
     icon: Sparkles,
-    title: "Made for Traditional Artists",
+    title: "Made for Artists",
     description: "No tech jargon. No complicated dashboards. Just a beautiful website that shows your work the way it deserves.",
   },
   {

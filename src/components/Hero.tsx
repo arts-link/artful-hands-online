@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Link, Palette } from "lucide-react";
+import { ArrowRight, Link as LinkIcon, Palette } from "lucide-react";
 import heroImage from "@/assets/hero-artistic.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -36,17 +37,17 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" variant="warm" className="text-base group">
-              <Link to="/#contact">
+            <Link to="/#contact">
+              <Button size="lg" variant="warm" className="text-base group">
                 Get Your Website Started
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
-            <Button size="lg" variant="soft" className="text-base">
-              <Link to="/artists">
+              </Button>
+            </Link>
+            <Link to="/artists">
+              <Button size="lg" variant="soft" className="text-base">
                 View Artist Portfolios
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
 
           {/* Trust indicators */}
