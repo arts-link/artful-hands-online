@@ -4,11 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Landing from "./pages/Landing";
 import Index from "./pages/Index";
 import Artists from "./pages/Artists";
 import Services from "./pages/Services";
 import Privacy from "./pages/Privacy";
 import AboutMe from "./pages/AboutMe";
+import Musicians from "./pages/Musicians";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,11 +54,13 @@ const App = () => (
       <BrowserRouter basename={basename}>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/visual-artists" element={<Index />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/services" element={<Services />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="/musicians" element={<Musicians />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
