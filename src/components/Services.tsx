@@ -1,4 +1,4 @@
-import { Globe, Palette, Users, Settings } from "lucide-react";
+import { Globe, Palette, Guitar, Squirrel  } from "lucide-react";
 
 const services = [
   {
@@ -12,14 +12,14 @@ const services = [
     description: "Create branded websites for each exhibition and artist. Elegant solutions for galleries representing multiple artists.",
   },
   {
-    icon: Users,
-    title: "Personal Support",
-    description: "We're here to help every step of the way. From setup to updates, you'll always have someone to talk to.",
+    icon: Guitar,
+    title: "Musician Websites",
+    description: "Create a website to showcare your tour dates, music, and merch. Ideal for solo musicians and bands.",
   },
   {
-    icon: Settings,
-    title: "Easy Updates",
-    description: "Need to add new work? We make it simple. Email us your images and we'll update your site—no login required.",
+    icon: Squirrel,
+    title: "Online Stores for Artists",
+    description: "Sell your art directly from your website with integrated e-commerce solutions tailored for artists.",
   },
 ];
 
@@ -32,7 +32,7 @@ const Services = () => {
             What We Offer
           </h2>
           <p className="text-lg text-muted-foreground font-body">
-            Simple, affordable solutions designed specifically for artists and galleries.
+            Simple, affordable solutions designed specifically for artists, musicians, and galleries.
           </p>
         </div>
 

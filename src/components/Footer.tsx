@@ -22,12 +22,7 @@ const Footer = () => {
             <ul className="space-y-2 font-body">
               <li>
                 <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Our Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/artists" className="text-muted-foreground hover:text-primary transition-colors">
-                  Featured Artists
+                  Services
                 </Link>
               </li>
               <li>
@@ -43,13 +38,13 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-foreground mb-4">Connect</h4>
             <ul className="space-y-2 font-body">
               <li>
-                <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About Us
+                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
                 </Link>
               </li>
               <li>
-                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Me
                 </Link>
               </li>
               <li>

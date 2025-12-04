@@ -72,10 +72,7 @@ const ContactForm = () => {
   return (
     <Card className="border-primary/20 shadow-lg">
       <CardHeader className="text-center">
-        <CardTitle className="font-display text-3xl">Let's Talk About Your Art</CardTitle>
-        <CardDescription className="text-base">
-          Share your vision with us—this takes less than 2 minutes
-        </CardDescription>
+        <CardTitle className="font-display text-3xl">About You</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -85,7 +82,7 @@ const ContactForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>What should we call you?</FormLabel>
+                  <FormLabel>Your Name</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="Your name" 
@@ -104,7 +101,7 @@ const ContactForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>How can we reach you?</FormLabel>
+                  <FormLabel>Your Email</FormLabel>
                   <FormControl>
                     <Input 
                       type="email" 
@@ -121,48 +118,13 @@ const ContactForm = () => {
 
             <FormField
               control={form.control}
-              name="artType"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>What type of art do you create?</FormLabel>
-                  <Select 
-                    onValueChange={field.onChange} 
-                    defaultValue={field.value}
-                    disabled={formspreeState.submitting}
-                  >
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select your art type" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="painting">Painting</SelectItem>
-                      <SelectItem value="sculpture">Sculpture</SelectItem>
-                      <SelectItem value="photography">Photography</SelectItem>
-                      <SelectItem value="digital-art">Digital Art</SelectItem>
-                      <SelectItem value="mixed-media">Mixed Media</SelectItem>
-                      <SelectItem value="crafts">Crafts</SelectItem>
-                      <SelectItem value="jewelry">Jewelry</SelectItem>
-                      <SelectItem value="textiles">Textiles</SelectItem>
-                      <SelectItem value="ceramics">Ceramics</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <ValidationError prefix="Art Type" field="artType" errors={formspreeState.errors} />
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
               name="projectDescription"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Tell us about your art and what you'd like to showcase</FormLabel>
+                  <FormLabel>Describe Your Project</FormLabel>
                   <FormControl>
                     <Textarea 
-                      placeholder="Share your vision, the story behind your work, and what makes it special..."
+                      placeholder="What type of art do you create?..."
                       rows={4}
                       {...field}
                       disabled={formspreeState.submitting}

@@ -9,17 +9,17 @@ const values = [
   {
     icon: Shield,
     title: "Privacy You Can Trust",
-    description: "Your work is yours. We don't track your visitors or sell data. Clean, ethical websites that respect everyone.",
+    description: "Your work is yours. arts-link doesn't track your visitors or sell data. Clean, ethical websites that respect everyone.",
   },
   {
     icon: Heart,
     title: "Personalized to Your Vision",
-    description: "Every artist is unique. We work with you to create a site that feels authentically you—not a cookie-cutter template.",
+    description: "Every artist is unique. arts-link works with you to create a site that feels authentically you—not a cookie-cutter template.",
   },
   {
     icon: Zap,
     title: "Get Online Fast",
-    description: "From idea to live website in days, not months. We handle the tech so you can focus on creating.",
+    description: "From idea to live website in days, not months. arts-link handles the tech so you can focus on creating.",
   },
 ];
 
@@ -29,11 +29,11 @@ const ValueProposition = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Why Artists Choose Us
+            Why Artists Choose arts-link
           </h2>
           <p className="text-lg text-muted-foreground font-body">
-            We understand that technology can feel overwhelming. That's why we've made it simple, 
-            affordable, and designed specifically for artists who want to focus on their craft.
+            Technology can feel overwhelming. arts-link makes it easy to showcase your work,
+            so you can focus on your craft.
           </p>
         </div>
 

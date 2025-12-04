@@ -18,10 +18,10 @@ const FeaturedArtists = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Artists We've Helped Shine
+            Featured Artists
           </h2>
           <p className="text-lg text-muted-foreground font-body">
-            See how we've brought these artists' visions to life with beautiful, personalized websites.
+            See how arts-link brought these artists' visions to life with beautiful, personalized websites.
           </p>
         </div>
 
@@ -59,11 +59,6 @@ const FeaturedArtists = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg" asChild>
-            <Link to="/artists">View All Artist Portfolios</Link>
-          </Button>
-        </div>
       </div>
     </section>
   );

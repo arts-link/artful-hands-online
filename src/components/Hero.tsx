@@ -57,14 +57,14 @@ const Hero = () => {
                   </div>
 
                   <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-                    Your Art Deserves to Be{" "}
+                    Your Art Should Be{" "}
                     <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                       Seen Online
                     </span>
                   </h1>
 
                   <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed font-body">
-                    We help artists get online without the tech headaches. Beautiful, 
+                    Get online without the tech headaches. Beautiful, 
                     affordable websites that showcase your work—no coding required.
                   </p>
 
@@ -124,14 +124,14 @@ const Hero = () => {
                   </div>
 
                   <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-                    Your Music Deserves to Be{" "}
+                    Your Music Should Be{" "}
                     <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                       Heard Online
                     </span>
                   </h1>
 
                   <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed font-body">
-                    Showcase your compositions, recordings, and musical journey with a professional 
+                    Showcase your compositions and recordings with a professional 
                     portfolio designed for musicians—no coding required.
                   </p>
 

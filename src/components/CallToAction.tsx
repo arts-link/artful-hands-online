@@ -7,19 +7,16 @@ const CallToAction = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Ready to Share Your Art with the World?
+              Ready to get started?
             </h2>
             <p className="text-xl text-muted-foreground font-body max-w-2xl mx-auto">
-              Let's create a website that does justice to your artwork. No tech skills needed—
-              just bring your passion, and we'll handle the rest.
+              Create a website that does justice to your work, no tech skills needed.
             </p>
           </div>
 
           <ContactForm />
 
-          <p className="mt-8 text-center text-sm text-muted-foreground font-body">
-            Questions? Email us anytime—we're real people who love helping artists.
-          </p>
+      
         </div>
       </div>
     </section>
